@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testosterone Meter</title>
+  <meta name="description" content="A private journal and practical guide to character, health, presence, and self-respect.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#/home" aria-label="Testosterone Meter home"><span class="brand-mark">T</span><span>Testosterone<br><em>Meter</em></span></a>
+      <div class="profile-mini"><div class="avatar">M</div><div><strong id="profileName">Guest</strong><small id="profileStatus">Local session</small></div></div>
+      <nav class="nav" aria-label="Primary navigation">
+        <p class="nav-label">Your practice</p>
+        <a href="#/home" data-route="home"><span>01</span> The meter</a>
+        <a href="#/history" data-route="history"><span>02</span> Your history</a>
+        <p class="nav-label">Field notes</p>
+        <a href="#/health" data-route="health"><span>03</span> Body & health</a>
+        <a href="#/presence" data-route="presence"><span>04</span> Presence & style</a>
+        <a href="#/character" data-route="character"><span>05</span> Character guide</a>
+        <p class="nav-label">Tools</p>
+        <a href="#/conversation" data-route="conversation"><span>06</span> Conversation</a>
+        <a href="#/settings" data-route="settings"><span>07</span> Account & API</a>
+      </nav>
+      <div class="sidebar-footer"><span class="status-dot"></span> Private by default<br><small>Your entries stay in this browser.</small></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div class="crumb" id="crumb">THE METER / DAILY CHECK-IN</div><button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteMenu">☰ <span>MENU</span></button></header>
+      <div id="app"></div>
+      <footer class="footer">TESTOSTERONE METER <span>•</span> A practice, not a performance.</footer>
+    </main>
+  </div>
+  <script src="sentence-database.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
